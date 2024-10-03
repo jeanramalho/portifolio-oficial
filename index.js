@@ -1,10 +1,11 @@
 
 tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        corPrincipal: '#da373d',
+    theme: {
+      extend: {
+        colors: {
+            doura: '#b09c5e',
+        }
       }
     }
   }
-}
+
