@@ -11,6 +11,9 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js" defer></script>
   <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/tailwindcss-animated@1.1.2/src/index.min.js"></script>
+  <script defer src="https://www.tailwindcss-animated.com/configurator.html?animation=fade-right"></script>
+
 
   <link rel="stylesheet" href="index.css">
 
@@ -18,10 +21,10 @@
 
 <body>
 
-  <div id="home" class="w-screen h-screen flex flex-col items-center justify-center">
+  <div id="home" class="w-screen h-screen flex flex-col items-center justify-between gap-6">
     <!--Start Background Animation Body-->
-    <div class="area">
-      <ul class="circles">
+    <div class="area bg-zinc-950">
+      <ul class="circles animate-pulse">
         <li></li>
         <li></li>
         <li></li>
@@ -36,15 +39,15 @@
     </div>
     <!--End Background Animation Body-->
 
-    <div id="main-home" class="w-3/4 h-full flex flex-col items-center justify-center">
+    <div id="main-home" class="w-3/4 h-screen flex flex-row items-center gap-10">
 
       <div class="w-full flex flex-col items-center gap-8">
-        <div class="w-1/4">
-          <img src="./assets/jeanramalho.png" alt="imagem com uma foto de perfil">
+        <div class="w-64 h-64 rounded-full animate-fade-right ">
+          <img src="./assets/jean.jpeg" alt="imagem com uma foto de perfil" class=" w-64 h-64 object-cover rounded-full">
         </div>
 
-        <div class="w-2/4 flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="113.134mm" height="19.4426mm"
+        <div class="w-max flex items-center justify-center">
+          <svg class="w-full" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="113.134mm" height="19.4426mm"
             version="1.1"
             style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
             viewBox="0 0 2419.3 415.77" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -147,7 +150,18 @@
 
       </div>
 
+      <div class="w-max flex flex-col items-center gap-6 mt-10">
+        <p class="text-white font-bold text-5xl uppercase w-full text-left">Oi, eu sou Jean Ramalho, trabalho desenvolvendo soluções para web e mobile.</p>
+        
+        <button class="bg-gradient-to-r from-indigo-500 via-purple-900 to-purple-500 text-white hover:animate-pulse p-4 rounded-full text-2xl font-bold uppercase">Baixe meu Currículo</button>
+      </div>
 
+
+    </div>
+
+    <div class="w-full bg-purple-900 h-10 b-0 flex flex-row justify-center items-center truncate pulse" >
+      <p class="text-xl font-bold uppercase text-center text-white tracking-wider">react native | Swift | Kotlin | React | Node | react native | Swift | Kotlin | React | Node | react native | Swift | Kotlin | React | Node | react native | Swift | Kotlin | React | Node</p>
+    
     </div>
 
 
